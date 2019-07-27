@@ -21,12 +21,14 @@ namespace highandlow
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //HIGHボタンが押されたとき
             kazu++;
             label1.Text = kazu.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //LOWボタンが押されたとき
             kazu--;
             button2.Text = "こんにちは";
         }
@@ -38,6 +40,7 @@ namespace highandlow
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //起動時の初期処理
             label1.Text = "?";
             label2.Text = "5より大きいか小さいか";
             kazu = 2;
