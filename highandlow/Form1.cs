@@ -12,7 +12,7 @@ namespace highandlow
 {
     public partial class Form1 : Form
     {
-        long kazu = 0;
+        long kazu = 2;
 
         public Form1()
         {
