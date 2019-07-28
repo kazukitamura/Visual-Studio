@@ -22,15 +22,23 @@ namespace highandlow
         private void button1_Click(object sender, EventArgs e)
         {
             //HIGHボタンが押されたとき
-            kazu++;
-            label1.Text = kazu.ToString();
+            if(kazu == 2)
+            {
+                label2.Text = "なぞの数は2でした"; 
+            }
+
+            if(kazu == 7)
+            {
+                label2.Text = "なぞの数は7でした";
+            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             //LOWボタンが押されたとき
             kazu--;
-            button2.Text = "こんにちは";
+            button2.Text = kazu.ToString();
         }
 
         private void label2_Click(object sender, EventArgs e)
